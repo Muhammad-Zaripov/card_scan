@@ -1,0 +1,1 @@
+enum InputType { cardNumber, expiryDate }
