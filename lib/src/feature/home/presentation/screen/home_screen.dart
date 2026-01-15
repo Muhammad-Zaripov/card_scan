@@ -42,19 +42,13 @@ class _HomeScreenState extends HomeScreenState {
               spacing: 30,
               children: [
                 Expanded(
-                  child: PrimaryButton(
-                    title: 'NFC',
-                    onTap: () {
-                      debugPrint('NFC ISHLADI');
-                    },
-                  ),
+                  child: PrimaryButton(title: 'NFC', onTap: () {}),
                 ),
                 Expanded(
                   child: PrimaryButton(title: 'Cam', onTap: openScan),
                 ),
               ],
             ),
-
             InfoTile(title: 'Card Number', value: cardNumberController.text),
             InfoTile(title: 'Expiry Date', value: cardDateController.text),
           ],
